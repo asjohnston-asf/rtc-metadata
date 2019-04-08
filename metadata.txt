@@ -1,16 +1,15 @@
 No Title
-Thumbnail
 Tags  Alaska Satellite Facility, ASF, Synthetic Aperture Radar, SAR, Radiometric Terrain Correction, RTC, Sentinel-1
 
 Summary
 
-This file is a Radiometric Terrain Corrected granule of GRD SAR data from the Sentinel-1 mission, processed using S1TBX software. Cell values indicate VH gamma-0 amplitude, and pixel spacing is 30 m.
+This file is a Radiometric Terrain Corrected granule of GRD SAR data from the Sentinel-1 mission, processed using S1TBX software. Cell values indicate VH gamma-0 power, and pixel spacing is 30m.
 
 Description
 
-This Radiometric Terrain Corrected (RTC) product is derived from a Ground Range Detected (GRD) granule of Synthetic Aperture Radar data from the Copernicus Sentinel-1 mission (European Space Agency), generated using ASF HyP3 RTC-S1TBX software version 1.0 running Sentinel-1 Toolbox (S1TBX) release 6.0. It is projected to WGS 84 Universal Transverse Mercator (UTM) coordinates, and is corrected for terrain using a digital elevation model (DEM). The DEM used for this product is NED13 (about 10 m resolution).
+This Radiometric Terrain Corrected (RTC) product is derived from a Ground Range Detected (GRD) granule of Synthetic Aperture Radar data from the Copernicus Sentinel-1 mission (European Space Agency), generated using Sentinel-1 Toolbox (S1TBX) release 6.0. It is projected to WGS 84 and is corrected for terrain using a digital elevation model (DEM). The DEM used for this product is SRTMGL1 (about 30m resolution).
 
-Processing Date/Time: 20190408 18050500 UTC
+Processing Date/Time: 20190406 002816 UTC
 
 In the filename, VV (HH) indicates the primary polarization, while VH (HV) indicates cross-polarization. To learn more about polarimetry, refer to https://sentinel.esa.int/web/sentinel/user-guides/sentinel-1-sar/product-overview/polarimetry
 
@@ -18,11 +17,11 @@ The name of the granule used to generate this TIFF file is: S1A_IW_GRDH_1SDV_201
 
 The side-looking geometry of SAR imagery leads to geometric and radiometric distortions, causing foreshortening, layover, shadowing, and radiometric variations due to terrain slope. Radiometric terrain correction converts unprocessed SAR data into geocoded tiff images with values directly relating to physical properties, alleviating the inherent SAR distortions. The process improves backscatter estimates and provides geolocation information, so images can be used as input for applications such as the monitoring of deforestation, land-cover classification, and delineation of wet snow-covered areas.
 
-Cell values indicate VH gamma nought amplitude, and pixel spacing is 30 m. If the output is in power rather than amplitude, the images may appear mostly black when first displayed. Consider setting the layer symbology to Stretched - Standard Deviations (choose a number (n) that works best for your particular dataset; the ArcGIS default of n: 2.5 will improve the display, but other values may give a better visualization).
+Cell values indicate VH gamma nought power, and pixel spacing is 30m. Since the output is in power rather than amplitude, the images may appear mostly black when first displayed. Consider setting the layer symbology to Stretched - Standard Deviations (choose a number (n) that works best for your particular dataset; the ArcGIS default of n: 2.5 will improve the display, but other values may give a better visualization).
 
-This product was processed using 3 look(s). Multi-looking is the process of coherently averaging together pixels of an image. The overall effect of multi-looking is to reduce the noise level, thus reducing speckle, at the cost of decreased resolution. Multi-looking is not applied for 10-m products.
+This product was processed using 3 looks. Multi-looking is the process of coherently averaging together pixels of an image. The overall effect of multi-looking is to reduce the noise level, thus reducing speckle, at the cost of decreased resolution.
 
-This image has been speckle filtered. The default is to not apply a speckle filter, but the user can choose to apply a filter when ordering the RTC imagery. When the filtering option is selected, the S1TBX default Speckle Filter is applied during RTC processing to remove speckle while preserving edges. When applied, it is a Lee Sigma filter set to one look with a window size of 7x7, a sigma of 0.9 and a target window size of 3x3.
+The S1TBX default Speckle Filter is applied during RTC processing to remove speckle while preserving edges. When applied, it is a Lee Sigma filter set to one look with a window size of 7x7, a sigma of 0.9 and a target window size of 3x3.
 
 You may wish to explore the filtering options available in ArcGIS rather than ordering imagery with a filter already applied. There are many options for different speckle filter functions to be applied on the fly using the Image Analysis window. To learn more about speckle filtering options, refer to http://desktop.arcgis.com/en/arcmap/latest/manage-data/raster-and-images/speckle-function.htm and to learn how apply a function (such as a speckle filter) to a raster, refer to http://desktop.arcgis.com/en/arcmap/latest/manage-data/raster-and-images/editing-functions-on-a-raster-dataset.htm
 
@@ -54,7 +53,7 @@ Content type Downloadable Data
 Export to FGDC CSDGM XML format as Resource Description No
 
 
-Citation  ▼►Publication date 2019-04-08 18:05:05
+Citation  ▼►Publication date 2019-04-06 00:28:16
 
 
 Citation Contacts  ▼►Responsible party - point of contact 
@@ -75,7 +74,7 @@ Resource Details  ▼►Dataset languages  English (UNITED STATES)
 Dataset character set  utf8 - 8 bit UCS Transfer Format
 
 
-Processing environment This product was generated using ASF HyP3 RTC-S1TBX software version 1.0, running S1TBX release 6.0.
+Processing environment This product was generated using S1TBX release 6.0.
 
 
 Credits 
@@ -123,7 +122,7 @@ Spatial Reference  ▼►
 
 Spatial Data Content  ▼►Image Description 
 Type of information image
-Attribute described by cell values VH gamma-0 amplitude
+Attribute described by cell values VH gamma-0 power
 
 
 Band information 
@@ -144,34 +143,13 @@ Data Quality  ▼►Scope of quality information ▼►Resource level dataset
 
 Lineage  ▼►Lineage statement 
 Steps in Radiometric Terrain Correction of Sentinel-1 Data using Sentinel-1 Toolbox (S1TBX):
-
-1.   Get the DEM file covering this scene from the ASF DEM heap
-
-2.   Download and apply precision orbit information
-
-3.   Optional: Remove thermal noise
-
-4.   Apply calibration parameters
-
-5.   If SLC inputs are used, deburst the SLC
-
-6.   Optional: Subset dataset to desired AOI or shapefile
-
-7.   Optional: Apply speckle filtering
-
-8.   If needed, Multi-look dataset. For SLC 30-meter product, 12 x 3 looks are used; for GRD 30-meter product, 3 x 3 looks are used.
-
-9.   Apply radiometric terrain flattening
-
-10.  Apply terrain correction
-
-11.  Optional: Create layover/shadow mask
-
-12.  Post processing creates GeoTIFF, PNG, and KMZ files
-
-
-
-
+1. Download and apply precision orbit information
+2. Apply calibration parameters
+3. Apply speckle filtering
+4. Multi-look dataset. For GRD 30-meter product, 3 x 3 looks are used.
+5. Apply radiometric terrain flattening
+6. Apply terrain correction
+7. Post processing creates GeoTIFF files
 
 
 Metadata Details  ▼►Metadata language English (UNITED STATES) 
@@ -185,7 +163,7 @@ Function of the resource download
 Scope of the data described by the metadata  dataset
 
 
-Last update 2019-04-08
+Last update 2019-04-06
 
 
 ArcGIS metadata properties
@@ -194,8 +172,8 @@ Metadata style North American Profile of ISO19115 2003
 Standard or profile used to edit metadata NAP
 
 
-Created in ArcGIS for the item 2019-04-08 18:05:05
-Last modified in ArcGIS for the item 2019-04-08 18:05:05
+Created in ArcGIS for the item 2019-04-06 00:28:16
+Last modified in ArcGIS for the item 2019-04-06 00:28:16
 
 
 Automatic updates
@@ -216,9 +194,4 @@ Country US
 e-mail address uso@asf.alaska.edu
 Metadata Maintenance  ▼►Maintenance 
 Update frequency as needed
-
-Thumbnail and Enclosures  ▼►Thumbnail 
-Thumbnail type Image file
-
-
 
