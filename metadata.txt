@@ -1,0 +1,224 @@
+No Title
+Thumbnail
+Tags  Alaska Satellite Facility, ASF, Synthetic Aperture Radar, SAR, Radiometric Terrain Correction, RTC, Sentinel-1
+
+Summary
+
+This file is a Radiometric Terrain Corrected granule of GRD SAR data from the Sentinel-1 mission, processed using S1TBX software. Cell values indicate VH gamma-0 amplitude, and pixel spacing is 30 m.
+
+Description
+
+This Radiometric Terrain Corrected (RTC) product is derived from a Ground Range Detected (GRD) granule of Synthetic Aperture Radar data from the Copernicus Sentinel-1 mission (European Space Agency), generated using ASF HyP3 RTC-S1TBX software version 1.0 running Sentinel-1 Toolbox (S1TBX) release 6.0. It is projected to WGS 84 Universal Transverse Mercator (UTM) coordinates, and is corrected for terrain using a digital elevation model (DEM). The DEM used for this product is NED13 (about 10 m resolution).
+
+Processing Date/Time: 20190408 18050500 UTC
+
+In the filename, VV (HH) indicates the primary polarization, while VH (HV) indicates cross-polarization. To learn more about polarimetry, refer to https://sentinel.esa.int/web/sentinel/user-guides/sentinel-1-sar/product-overview/polarimetry
+
+The name of the granule used to generate this TIFF file is: S1A_IW_GRDH_1SDV_20190210T015109_20190210T015134_025861_02E0D3_CEE5. For a detailed description of the Sentinel-1 file naming convention, refer to https://www.asf.alaska.edu/sentinel/data/#naming
+
+The side-looking geometry of SAR imagery leads to geometric and radiometric distortions, causing foreshortening, layover, shadowing, and radiometric variations due to terrain slope. Radiometric terrain correction converts unprocessed SAR data into geocoded tiff images with values directly relating to physical properties, alleviating the inherent SAR distortions. The process improves backscatter estimates and provides geolocation information, so images can be used as input for applications such as the monitoring of deforestation, land-cover classification, and delineation of wet snow-covered areas.
+
+Cell values indicate VH gamma nought amplitude, and pixel spacing is 30 m. If the output is in power rather than amplitude, the images may appear mostly black when first displayed. Consider setting the layer symbology to Stretched - Standard Deviations (choose a number (n) that works best for your particular dataset; the ArcGIS default of n: 2.5 will improve the display, but other values may give a better visualization).
+
+This product was processed using 3 look(s). Multi-looking is the process of coherently averaging together pixels of an image. The overall effect of multi-looking is to reduce the noise level, thus reducing speckle, at the cost of decreased resolution. Multi-looking is not applied for 10-m products.
+
+This image has been speckle filtered. The default is to not apply a speckle filter, but the user can choose to apply a filter when ordering the RTC imagery. When the filtering option is selected, the S1TBX default Speckle Filter is applied during RTC processing to remove speckle while preserving edges. When applied, it is a Lee Sigma filter set to one look with a window size of 7x7, a sigma of 0.9 and a target window size of 3x3.
+
+You may wish to explore the filtering options available in ArcGIS rather than ordering imagery with a filter already applied. There are many options for different speckle filter functions to be applied on the fly using the Image Analysis window. To learn more about speckle filtering options, refer to http://desktop.arcgis.com/en/arcmap/latest/manage-data/raster-and-images/speckle-function.htm and to learn how apply a function (such as a speckle filter) to a raster, refer to http://desktop.arcgis.com/en/arcmap/latest/manage-data/raster-and-images/editing-functions-on-a-raster-dataset.htm
+
+For areas where there is not a publicly-available digital elevation model (i.e. sea ice), geocoded products without terrain correction are also available from http://hyp3.asf.alaska.edu/
+
+The Sentinel-1A satellite was launched April 3, 2014, and the Sentinel-1B satellite was launched April 25, 2016. The satellites each have a 12-day repeat cycle. More information about the mission is available at https://earth.esa.int/web/guest/missions/esa-operational-eo-missions/sentinel-1
+
+Additional information about Sentinel-1 data, imagery, tools and applications is available at https://www.asf.alaska.edu/sentinel/
+
+Credits
+
+ASF DAAC 2019 using S1TBX software. Contains modified Copernicus Sentinel data 2019, processed by ESA.
+
+Use limitations
+
+There are no restrictions on the use of this data, but it must be cited as listed in the credits.
+
+Extent
+There is no extent for this item.
+
+Scale Range
+Maximum (zoomed in)   1:5,000 
+Minimum (zoomed out)   1:150,000,000 
+
+Topics and Keywords  ▼►Themes or categories of the resource  geoscientificInformation
+
+
+Content type Downloadable Data
+Export to FGDC CSDGM XML format as Resource Description No
+
+
+Citation  ▼►Publication date 2019-04-08 18:05:05
+
+
+Citation Contacts  ▼►Responsible party - point of contact 
+Organization's name Alaska Satellite Facility
+
+
+Contact information ▼►Phone 
+Voice 907-474-5041
+Address 
+Type physical
+Delivery point 2156 Koyukuk Dr.
+City Fairbanks
+Administrative area Alaska
+Postal code 99775-7320
+Country US
+e-mail address uso@asf.alaska.edu
+Resource Details  ▼►Dataset languages  English (UNITED STATES) 
+Dataset character set  utf8 - 8 bit UCS Transfer Format
+
+
+Processing environment This product was generated using ASF HyP3 RTC-S1TBX software version 1.0, running S1TBX release 6.0.
+
+
+Credits 
+ASF DAAC 2019 using S1TBX software. Contains modified Copernicus Sentinel data 2019, processed by ESA.
+
+
+ArcGIS item properties 
+Resource Points of Contact  ▼►Point of contact - publisher 
+Organization's name Alaska Satellite Facility
+
+
+Contact information ▼►Phone 
+Voice 907-474-5041
+Address 
+Type physical
+Delivery point 2156 Koyukuk Dr.
+City Fairbanks
+Administrative area Alaska
+Postal code 99775-7320
+Country US
+e-mail address uso@asf.alaska.edu
+Resource Maintenance  ▼►Resource maintenance 
+Update frequency as needed
+
+Maintenance contact - custodian 
+Organization's name Alaska Satellite Facility
+
+
+Contact information ▼►Phone 
+Voice 907-474-5041
+Address 
+Type physical
+Delivery point 2156 Koyukuk Dr.
+City Fairbanks
+Administrative area Alaska
+Postal code 99775-7320
+Country US
+e-mail address uso@asf.alaska.edu
+Resource Constraints  ▼►Constraints 
+Limitations of use 
+There are no restrictions on the use of this data, but it must be cited as listed in the credits.
+
+
+Spatial Reference  ▼►
+
+Spatial Data Content  ▼►Image Description 
+Type of information image
+Attribute described by cell values VH gamma-0 amplitude
+
+
+Band information 
+Sequence identifier 
+Name C-band
+Type SAR
+
+
+Triangulation has been performed No
+Radiometric calibration is available No
+Camera calibration is available No
+Film distortion information is available No
+Lens distortion information is available No
+
+
+Data Quality  ▼►Scope of quality information ▼►Resource level dataset
+
+
+Lineage  ▼►Lineage statement 
+Steps in Radiometric Terrain Correction of Sentinel-1 Data using Sentinel-1 Toolbox (S1TBX):
+
+1.   Get the DEM file covering this scene from the ASF DEM heap
+
+2.   Download and apply precision orbit information
+
+3.   Optional: Remove thermal noise
+
+4.   Apply calibration parameters
+
+5.   If SLC inputs are used, deburst the SLC
+
+6.   Optional: Subset dataset to desired AOI or shapefile
+
+7.   Optional: Apply speckle filtering
+
+8.   If needed, Multi-look dataset. For SLC 30-meter product, 12 x 3 looks are used; for GRD 30-meter product, 3 x 3 looks are used.
+
+9.   Apply radiometric terrain flattening
+
+10.  Apply terrain correction
+
+11.  Optional: Create layover/shadow mask
+
+12.  Post processing creates GeoTIFF, PNG, and KMZ files
+
+
+
+
+
+
+Metadata Details  ▼►Metadata language English (UNITED STATES) 
+Metadata character set utf8 - 8 bit UCS Transfer Format
+
+
+Metadata identifier RTC_S1TBX_Template_190318
+Function of the resource download
+
+
+Scope of the data described by the metadata  dataset
+
+
+Last update 2019-04-08
+
+
+ArcGIS metadata properties
+Metadata format ArcGIS 1.0
+Metadata style North American Profile of ISO19115 2003
+Standard or profile used to edit metadata NAP
+
+
+Created in ArcGIS for the item 2019-04-08 18:05:05
+Last modified in ArcGIS for the item 2019-04-08 18:05:05
+
+
+Automatic updates
+Have been performed No
+Metadata Contacts  ▼►Metadata contact - originator 
+Organization's name Alaska Satellite Facility
+
+
+Contact information ▼►Phone 
+Voice 907-474-5041
+Address 
+Type physical
+Delivery point 2156 Koyukuk Dr.
+City Fairbanks
+Administrative area Alaska
+Postal code 99775-7320
+Country US
+e-mail address uso@asf.alaska.edu
+Metadata Maintenance  ▼►Maintenance 
+Update frequency as needed
+
+Thumbnail and Enclosures  ▼►Thumbnail 
+Thumbnail type Image file
+
+
+
